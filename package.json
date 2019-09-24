@@ -1,0 +1,51 @@
+{
+  "name": "lojafornite",
+  "version": "0.1.0",
+  "private": true,
+  "author": "luketevl",
+  "homepage": "https://lojafornite.com",
+  "dependencies": {
+    "gh-pages": "^2.1.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-scripts": "3.1.2",
+    "styled-components": "^4.4.0"
+  },
+  "scripts": {
+    "start": "REACT_APP_API='http://localhost:8081/api/' react-scripts start",
+    "build": "REACT_APP_API='https://secret-sierra-64494.herokuapp.com/api/' react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@storybook/addon-actions": "^5.2.1",
+    "@storybook/addon-links": "^5.2.1",
+    "@storybook/addons": "^5.2.1",
+    "@storybook/react": "^5.2.1",
+    "babel-loader": "^8.0.6",
+    "eslint": "6.1.0",
+    "eslint-config-airbnb-base": "14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-react": "^7.14.3"
+  }
+}

@@ -1,0 +1,7 @@
+env:
+  browser: true
+extends: 
+  - airbnb-base
+  - "eslint:recommended",
+  - "plugin:react/recommended"
+plugins: react
